@@ -31,6 +31,29 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyA3WdCfsl6nn7ySMdc4s6M3Lr3ive2jSpU",
+    authDomain: "kitapcim-94f9d.firebaseapp.com",
+    projectId: "kitapcim-94f9d",
+    storageBucket: "kitapcim-94f9d.appspot.com",
+    messagingSenderId: "270123888535",
+    appId: "1:270123888535:web:da765974e995dfd96f9ed2",
+    measurementId: "G-370T38EGC4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
@@ -42,5 +65,8 @@
     }
   </script>
   <script src="main.dart.js" type="application/javascript"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  
 </body>
 </html>
